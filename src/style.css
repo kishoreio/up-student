@@ -1,0 +1,78 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Custom css */
+
+.profile-size {
+  height: 45px;
+  height: 45px;
+}
+/* Login Component */
+.login-height {
+  min-height: 35rem;
+}
+.login-direction {
+  flex-direction: row;
+}
+.form-width {
+  width: 50%;
+}
+/* Result Component */
+.score-height {
+  height: 20rem;
+}
+.score-width {
+  width: 25rem;
+}
+.score-border {
+  border-top: 1px solid;
+  border-left: 0.5px solid #e2e8f0;
+  border-right: 0.5px solid #e2e8f0;
+}
+.score-text-height {
+  height: inherit;
+}
+/* Submit Component */
+.submit-height {
+  height: 35rem;
+}
+/* Dashboard loading height*/
+.loading-height {
+  height: 20rem;
+}
+.flex-mobile {
+  flex-direction: row;
+}
+.bg-custom {
+  background-image: url('./resources/trophy.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: -5rem;
+  background-size: contain;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .flex-mobile {
+    flex-direction: column;
+  }
+  .width-mobile {
+    width: 90%;
+  }
+  .login-direction {
+    flex-direction: column;
+  }
+  .form-width {
+    width: 100%;
+  }
+  .image-width {
+    width: 100%;
+  }
+  .btn-margin {
+    margin-top: 1rem;
+  }
+  .template-question-font {
+    font-size: 1.5rem;
+  }
+}
